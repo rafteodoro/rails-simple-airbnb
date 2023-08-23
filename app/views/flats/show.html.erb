@@ -1,0 +1,26 @@
+<div class="banner"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+      <h1><%= @flat.name %></h1>
+      <h5><%= @flat.address %></h5>
+
+      <div class="row mt-5">
+        <h3>A bit more about this flat...</h3>
+        <p> <%= @flat.description %> </p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="row">
+        <h5>Book this place!</h5>
+      </div>
+      <div class="row">
+        <h4>Details</h4>
+        <div class="d-flex flex-row mb-3">
+            <div class="p-1"><i class="fa-solid fa-user"> <%= @flat.number_of_guests %></i></div>
+            <div class="p-1"><i class="fa-solid fa-euro-sign"> <%= @flat.price_per_night %></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

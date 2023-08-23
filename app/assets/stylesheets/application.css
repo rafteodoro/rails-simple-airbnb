@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ button a{
+    text-decoration: none;
+ }
+
+ .card a{
+    text-decoration: none;
+ }
+
+ .banner {
+   height: 300px;
+   width: 100%;
+ }

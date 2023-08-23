@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Add a Flat</h1>
+  <%= form_with model: @flat do |form| %>
+    <div class="mb-3">
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :address, class: "form-label" %>
+      <%= form.text_field :address, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :description, class: "form-label" %>
+      <%= form.text_area :description, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :number_of_guests, class: "form-label" %>
+      <%= form.number_field :number_of_guests, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :price_per_night, class: "form-label" %>
+      <%= form.number_field :price_per_night, class: "form-control" %>
+    </div>
+    <%= form.submit "Add a Flat", class: "btn btn-primary" %>
+  <% end %>
+</div>
